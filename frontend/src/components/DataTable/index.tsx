@@ -6,7 +6,7 @@ import { formatLocalDate } from "utils/format";
 import { BASE_URL } from "utils/request";
 
 const DataTable = () => {
-    
+
   const [activePage, setActivePage] = useState(0);
   const [page, setPage] = useState<SalePage>({
     first: true,
@@ -30,7 +30,7 @@ const DataTable = () => {
 
   return (
     <>
-      <Pagination page={page} onPageChange={changePage} />
+      <Pagination  page={page} onPageChange={changePage} />
       <div className="table-responsive">
         <table className="table table-striped table-sm">
           <thead>
